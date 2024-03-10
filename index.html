@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="res/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="res/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="res/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="res/favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <!-- навигация -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img src="res/logo.svg" alt="Logo" width="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Избранное</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-end">
+          <button class="btn btn-outline-primary me-2" type="button">
+            Регистрация
+          </button>
+          <button class="btn btn-primary" type="button">Войти</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- карусель -->
+    <div class="container my-carousel border my-border">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active btn"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            class="btn"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            class="btn"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            class="btn"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-container">
+              <img
+                src="res/outleap_radius.png"
+                class="d-block w-200 carousel-image"
+                alt="Outleap RADIUS ELITE 29"
+              />
+              <div class="carousel-text">
+                <h5>Outleap RADIUS ELITE 29</h5>
+                <p>
+                  Radius - продвинутая модель для прогулочного и спортивного
+                  катания. Отлично подходит для прогулочного и тренировочного
+                  катания, так-же имеет задел для старта в любительских
+                  кросс-кантри гонках.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-container">
+              <img
+                src="res/outleap_radius.png"
+                class="d-block w-200 carousel-image"
+                alt="Outleap RADIUS ELITE 29"
+              />
+              <div class="carousel-text">
+                <h5>Outleap RADIUS ELITE 29</h5>
+                <p>
+                  Radius - продвинутая модель для прогулочного и спортивного
+                  катания. Отлично подходит для прогулочного и тренировочного
+                  катания, так-же имеет задел для старта в любительских
+                  кросс-кантри гонках.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-container">
+              <img
+                src="res/outleap_radius.png"
+                class="d-block w-200 carousel-image"
+                alt="Outleap RADIUS ELITE 29"
+              />
+              <div class="carousel-text">
+                <h5>Outleap RADIUS ELITE 29</h5>
+                <p>
+                  Radius - продвинутая модель для прогулочного и спортивного
+                  катания. Отлично подходит для прогулочного и тренировочного
+                  катания, так-же имеет задел для старта в любительских
+                  кросс-кантри гонках.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-container">
+              <img
+                src="res/outleap_radius.png"
+                class="d-block w-200 carousel-image"
+                alt="Outleap RADIUS ELITE 29"
+              />
+              <div class="carousel-text">
+                <h5>Outleap RADIUS ELITE 29</h5>
+                <p>
+                  Radius - продвинутая модель для прогулочного и спортивного
+                  катания. Отлично подходит для прогулочного и тренировочного
+                  катания, так-же имеет задел для старта в любительских
+                  кросс-кантри гонках.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <img src="res/prev.svg" aria-hidden="true" alt="prev" />
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <img src="res/next.svg" aria-hidden="true" alt="next" />
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- открывает каталог -->
+    <div class="container my-view-all">
+      <div class="col-md-3 my-view-all-container">
+        <a class="nav-link" aria-current="page" href="/">
+          Посмотреть все <img src="res/right.svg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- карточки -->
+    <div class="container my-5">
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 my-card-container"
+      >
+        <div class="col">
+          <div class="card border">
+            <img
+              src="res/outleap_radius.png"
+              class="card-img-top"
+              alt="Outleap RADIUS ELITE 29"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <p class="card-text">
+                Radius - продвинутая модель для прогулочного и спортивного
+                катания. Отлично подходит для прогулочного и тренировочного
+                катания, так-же имеет задел для старта в любительских
+                кросс-кантри гонках.
+              </p>
+              <div class="d-flex align-items-center">
+                <a href="/" class="col-md-1"
+                  ><img src="res/black_heart.svg" alt=""
+                /></a>
+                <div class="col-md-4"></div>
+                <a href="/" class="btn btn-primary col-md-7 text-center"
+                  >В избранное</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border">
+            <img
+              src="res/outleap_radius.png"
+              class="card-img-top"
+              alt="Outleap RADIUS ELITE 29"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <p class="card-text">
+                Radius - продвинутая модель для прогулочного и спортивного
+                катания. Отлично подходит для прогулочного и тренировочного
+                катания, так-же имеет задел для старта в любительских
+                кросс-кантри гонках.
+              </p>
+              <div class="d-flex align-items-center">
+                <a href="/" class="col-md-1"
+                  ><img src="res/grad_heart.svg" alt=""
+                /></a>
+                <div class="col-md-3"></div>
+                <a
+                  href="/"
+                  class="btn btn-outline-primary me-2 col-md-8 text-center"
+                  >Уже в избранном</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border">
+            <img
+              src="res/outleap_radius.png"
+              class="card-img-top"
+              alt="Outleap RADIUS ELITE 29"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <p class="card-text">
+                Radius - продвинутая модель для прогулочного и спортивного
+                катания. Отлично подходит для прогулочного и тренировочного
+                катания, так-же имеет задел для старта в любительских
+                кросс-кантри гонках.
+              </p>
+              <div class="d-flex align-items-center">
+                <a href="/" class="col-md-1"
+                  ><img src="res/black_heart.svg" alt=""
+                /></a>
+                <div class="col-md-4"></div>
+                <a href="/" class="btn btn-primary col-md-7 text-center"
+                  >В избранное</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border">
+            <img
+              src="res/outleap_radius.png"
+              class="card-img-top"
+              alt="Outleap RADIUS ELITE 29"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <p class="card-text">
+                Radius - продвинутая модель для прогулочного и спортивного
+                катания. Отлично подходит для прогулочного и тренировочного
+                катания, так-же имеет задел для старта в любительских
+                кросс-кантри гонках.
+              </p>
+              <div class="d-flex align-items-center">
+                <a href="/" class="col-md-1"
+                  ><img src="res/grad_heart.svg" alt=""
+                /></a>
+                <div class="col-md-3"></div>
+                <a
+                  href="/"
+                  class="btn btn-outline-primary me-2 col-md-8 text-center"
+                  >Уже в избранном</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border">
+            <img
+              src="res/outleap_radius.png"
+              class="card-img-top"
+              alt="Outleap RADIUS ELITE 29"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <p class="card-text">
+                Radius - продвинутая модель для прогулочного и спортивного
+                катания. Отлично подходит для прогулочного и тренировочного
+                катания, так-же имеет задел для старта в любительских
+                кросс-кантри гонках.
+              </p>
+              <div class="d-flex align-items-center">
+                <a href="/" class="col-md-1"
+                  ><img src="res/black_heart.svg" alt=""
+                /></a>
+                <div class="col-md-4"></div>
+                <a href="/" class="btn btn-primary col-md-7 text-center"
+                  >В избранное</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border">
+            <img
+              src="res/outleap_radius.png"
+              class="card-img-top"
+              alt="Outleap RADIUS ELITE 29"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <p class="card-text">
+                Radius - продвинутая модель для прогулочного и спортивного
+                катания. Отлично подходит для прогулочного и тренировочного
+                катания, так-же имеет задел для старта в любительских
+                кросс-кантри гонках.
+              </p>
+              <div class="d-flex align-items-center">
+                <a href="/" class="col-md-1"
+                  ><img src="res/grad_heart.svg" alt=""
+                /></a>
+                <div class="col-md-3"></div>
+                <a
+                  href="/"
+                  class="btn btn-outline-primary me-2 col-md-8 text-center"
+                  >Уже в избранном</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- футер -->
+    <div class="container footer-margin-top">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 border-bottom"
+      >
+        <div class="col mb-3 col-md-4">
+          <div class="d-flex align-items-end">
+            <a href="/" class="mb-3 link-body-emphasis text-decoration-none">
+              <img src="res/logo.svg" alt="Logo" width="60" />
+            </a>
+            <p
+              class="text-body-secondary footer-text-12 mb-3 col-md-2 text-end"
+            >
+              © 2024
+            </p>
+          </div>
+          <p class="text-body-secondary footer-text-12">
+            Катайся в удовольствие
+          </p>
+        </div>
+        <div class="col mb-3 col-md-6"></div>
+        <div class="col mb-3 col-md-2 text-end">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/" class="nav-link p-1 footer-text-14 color-text-grey"
+                >О нас</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/" class="nav-link p-1 footer-text-14 color-text-red"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-1 footer-text-14 color-text-grey"
+                >Каталог</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-1 footer-text-14 color-text-red"
+                >Избранное</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div class="text-center">
+        <p class="text-body-secondary footer-text-12">
+          ©2024. All Rights Reserved.<span class="color-text-red">Velik</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
