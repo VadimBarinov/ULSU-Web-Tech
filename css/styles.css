@@ -206,3 +206,12 @@ body {
   font-weight: 500;
   color: black;
 }
+.form-control:focus {
+  border-color: black;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px black;
+}
+.btn-close:focus {
+  box-shadow: none !important;
+}
