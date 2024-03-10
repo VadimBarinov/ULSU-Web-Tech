@@ -36,6 +36,94 @@
     <link rel="manifest" href="res/favicon_io/site.webmanifest" />
   </head>
   <body>
+    <!-- форма входа -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <div class="my-modal-close-btn">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div>
+            <h1 class="modal-title fs-5 my-modal-title" id="loginModalLabel">
+              Вход
+            </h1>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Пароль:</label>
+                <input type="text" class="form-control" id="password" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- форма регистрации -->
+    <div
+      class="modal fade"
+      id="regModal"
+      tabindex="-1"
+      aria-labelledby="regModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <div class="my-modal-close-btn">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div>
+            <h1 class="modal-title fs-5 my-modal-title" id="regModalLabel">
+              Регистрация
+            </h1>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Пароль:</label>
+                <input type="text" class="form-control" id="password" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Зарегистрироваться
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- навигация -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -77,10 +165,22 @@
         </div>
         <!-- кнопки регистрации и входа -->
         <div class="col-3 text-end">
-          <button class="btn btn-outline-primary me-2" type="button">
+          <button
+            class="btn btn-outline-primary me-2"
+            data-bs-toggle="modal"
+            data-bs-target="#regModal"
+            type="button"
+          >
             Регистрация
           </button>
-          <button class="btn btn-primary" type="button">Войти</button>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            type="button"
+          >
+            Войти
+          </button>
         </div>
       </div>
     </nav>

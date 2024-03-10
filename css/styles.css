@@ -173,3 +173,36 @@ body {
   font-weight: 500;
   color: #595c5f;
 }
+.my-modal-title {
+  font-size: 32;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+}
+.my-modal-close-btn {
+  display: flex;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.modal-body {
+  margin-top: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.modal-footer {
+  border: 0px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-dialog {
+  border-radius: 8px;
+  background: black;
+}
+.col-form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
