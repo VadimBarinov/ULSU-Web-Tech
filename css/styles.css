@@ -168,6 +168,20 @@ body {
     display: none;
   }
 }
+@media (max-width: 769px) {
+  .carousel-container-sm {
+    padding: 20px 20px 60px 20px;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-container-lg {
+    display: none;
+  }
+}
 .carousel-image-lg {
   object-fit: contain;
   margin: auto;
