@@ -16,6 +16,7 @@ body {
   margin-inline: 30px;
   font-size: 16px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .navbar-nav {
   margin-left: 60px;
@@ -24,11 +25,54 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.my-btn-box-1 {
+  text-align: center;
+  margin-left: auto;
+  float: right;
+  order: 1;
+}
+@media (min-width: 1000px) {
+  .my-btn-box-1-lg {
+    text-align: center;
+    margin-left: auto;
+    float: right;
+    order: 1;
+  }
+  .my-btn-box-2-lg {
+    text-align: center;
+    float: right;
+    order: 2;
+  }
+  .my-btn-box-1-sm {
+    display: none;
+  }
+  .my-btn-box-2-sm {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  .my-btn-box-1-sm {
+    text-align: center;
+    order: 1;
+  }
+  .my-btn-box-2-sm {
+    text-align: center;
+    order: 2;
+  }
+  .my-btn-box-1-lg {
+    display: none;
+  }
+  .my-btn-box-2-lg {
+    display: none;
+  }
+}
 .btn-primary {
   font-family: Montserrat Alternates;
   font-weight: 700;
   font-size: 14px;
   padding: 10px 26px 10px 26px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   border-radius: 8px;
   border: 0px;
   color: white !important;
@@ -51,6 +95,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   padding: 10px 26px 10px 26px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   border-radius: 8px;
   border: 0px;
   box-shadow: inset 0 0 0 2.1px black !important;
@@ -79,6 +125,10 @@ body {
 .footer-text-12 {
   font-size: 12px;
 }
+.my-footer-box {
+  float: right;
+  margin-left: auto;
+}
 .color-text-red {
   color: #ff7a00;
   cursor: pointer;
@@ -99,23 +149,47 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.carousel-container {
-  display: flex;
-  float: left;
-  margin-right: 10px;
-  padding: 100px 150px 100px 150px;
+@media (min-width: 1200px) {
+  .carousel-container-lg {
+    display: flex;
+    float: left;
+    margin-right: 10px;
+    padding: 100px 150px 100px 150px;
+  }
+  .carousel-container-sm {
+    display: none;
+  }
 }
-.carousel-image {
+@media (max-width: 1199px) {
+  .carousel-container-sm {
+    padding: 40px 80px 60px 80px;
+  }
+  .carousel-container-lg {
+    display: none;
+  }
+}
+.carousel-image-lg {
   object-fit: contain;
+  margin: auto;
 }
-.carousel-text {
+.carousel-image-sm {
+  object-fit: contain;
+  margin: auto;
+  padding-top: 40px;
+}
+.carousel-text-lg {
   padding-left: 100px;
 }
-.carousel-text h5 {
+.carousel-text-sm {
+  padding-top: 40px;
+}
+.carousel-text-lg h5,
+.carousel-text-sm h5 {
   font-size: 26px;
   font-weight: 700;
 }
-.carousel-text p {
+.carousel-text-lg p,
+.carousel-text-sm p {
   font-size: 16px;
   font-weight: 500;
   color: #595c5f;
@@ -136,7 +210,7 @@ body {
 }
 .card {
   padding: 20px 20px 20px 20px;
-  margin: 32px 32px 32px 32px;
+  margin: 20px 20px 20px 20px;
   border: 0px;
   cursor: pointer;
   transition: 0.2s;
@@ -149,6 +223,11 @@ body {
 .my-card-container {
   margin-left: -68px;
   margin-right: -68px;
+}
+.my-card-btn {
+  text-align: centers;
+  margin-left: auto;
+  float: right;
 }
 .my-view-all {
   margin-top: 180px;
