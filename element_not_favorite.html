@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="res/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="res/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="res/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="res/favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <!-- форма входа -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <div class="my-modal-close-btn">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div>
+            <h1 class="modal-title fs-5 my-modal-title" id="loginModalLabel">
+              Вход
+            </h1>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Пароль:</label>
+                <input type="text" class="form-control" id="password" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- форма регистрации -->
+    <div
+      class="modal fade"
+      id="regModal"
+      tabindex="-1"
+      aria-labelledby="regModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <div class="my-modal-close-btn">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div>
+            <h1 class="modal-title fs-5 my-modal-title" id="regModalLabel">
+              Регистрация
+            </h1>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Пароль:</label>
+                <input type="text" class="form-control" id="password" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Зарегистрироваться
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- навигация -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand p-0" href="index.html">
+          <img src="res/logo.svg" alt="Logo" width="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav text-center d-flex align-items-center container-fluid"
+          >
+            <li class="nav-item">
+              <!-- ссылка на главную -->
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- ссылка на каталог -->
+              <a class="nav-link active" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <!-- ссылка на избранное -->
+              <a class="nav-link" href="favorites.html">Избранное</a>
+            </li>
+            <li class="nav-item">
+              <!-- ссылка на о себе -->
+              <a class="nav-link" href="information.html">О себе</a>
+            </li>
+            <li class="my-btn-box-1-lg">
+              <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
+              <button
+                class="btn btn-outline-primary me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#regModal"
+                type="button"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="my-btn-box-2-lg">
+              <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                type="button"
+              >
+                Войти
+              </button>
+            </li>
+            <li class="my-btn-box-1-sm">
+              <!-- кнопки регистрации и входа МАЛЕНЬКИЙ ЭКРАН -->
+              <button
+                class="btn btn-outline-primary me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#regModal"
+                type="button"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="my-btn-box-2-sm">
+              <!-- кнопки регистрации и входа МАЛЕНЬКИЙ ЭКРАН -->
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                type="button"
+              >
+                Войти
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div
+        class="row row-cols-1 row-cols-md-1 row-cols-lg-2 my-element-container border-bottom"
+      >
+        <div class="my-element-name">
+          <h1>Outleap RADIUS ELITE 29</h1>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="my-element-btn-container d-flex align-items-center">
+            <div>
+              <button
+                class="btn btn-primary my-element-btn-outline-primary"
+                type="button"
+              >
+                В избранном
+              </button>
+            </div>
+            <a href="#"><img src="res/grad_heart_large.svg" alt="" /></a>
+          </div>
+        </div>
+        <img
+          src="res/outleap_radius.png"
+          class="d-block w-200 my-element-img"
+          alt="Outleap RADIUS ELITE 29"
+        />
+        <div class="my-element-info">
+          <p>
+            Radius - продвинутая модель для прогулочного и спортивного катания.
+            Отлично подходит для прогулочного и тренировочного катания, так-же
+            имеет задел для старта в любительских кросс-кантри
+            гонках.Обновленная рама представлена в геометрии MXG (Modern
+            X-Country Geometry), но в отличии от старшей модели Vector, имеет
+            прицел в сторону комфорта:• Заваленный угол рулевой в 68 градусов
+            даст хорошую проходимость и плавное управление на скорости•
+            Удлинённый передний треугольник предлагает современную спортивную
+            посадку с улучшенным комфортом• Короткий задний треугольник добавит
+            маневренности и ускорения• Заниженный стендовер для большей свободы
+            в движении над байком и низкий центр масс
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="my-element-detail">
+        <h1>Характеристики</h1>
+      </div>
+      <div
+        class="row row-cols-2 row-cols-md-2 row-cols-lg-2 my-element-detail-container"
+      >
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Бренд:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>Outleap</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Сезон:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>2024</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Пол:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>унисекс</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Возраст:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>для взрослых</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Тип велосипеда:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>хардтейл</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Назначение:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>Кросскантри</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Крепление колеса:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>эксцентрик</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Уровень оборудования:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>начальный улучшенный</p>
+        </div>
+        <div class="my-element-detail-column text-start border-bottom">
+          <p>Материал рамы:</p>
+        </div>
+        <div class="my-element-detail-column text-end border-bottom">
+          <p>алюминий</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- футер -->
+    <div class="container footer-margin-top">
+      <footer
+        class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 my-5 border-bottom"
+      >
+        <div class="col mb-3">
+          <div class="d-flex align-items-end">
+            <a
+              href="index.html"
+              class="mb-3 link-body-emphasis text-decoration-none"
+            >
+              <img src="res/logo.svg" alt="Logo" width="60" />
+            </a>
+            <p
+              class="text-body-secondary footer-text-12 mb-3 col-md-3 text-center"
+            >
+              © 2024
+            </p>
+          </div>
+          <p class="text-body-secondary footer-text-12">
+            Катайся в удовольствие
+          </p>
+        </div>
+        <div class="col mb-3 text-end my-footer-box">
+          <!-- доп навигация в футере (+ о себе) -->
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="information.html"
+                class="nav-link p-1 footer-text-14 color-text-grey"
+                >О себе</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="index.html"
+                class="nav-link p-1 footer-text-14 color-text-red"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="catalog.html"
+                class="nav-link p-1 footer-text-14 color-text-grey"
+                >Каталог</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="favorites.html"
+                class="nav-link p-1 footer-text-14 color-text-red"
+                >Избранное</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div class="text-center">
+        <p class="text-body-secondary footer-text-12">
+          ©2024. All Rights Reserved.<span class="color-text-red">Velik</span>
+        </p>
+      </div>
+    </div>
+    <script src="js/functions.js"></script>
+    <script src="js/title.js"></script>
+  </body>
+</html>
