@@ -499,7 +499,7 @@ body {
   object-fit: contain;
   margin: auto;
 }
-@media (min-width: 770px) {
+@media (min-width: 1200px) {
   .my-element-info {
     padding-left: 80px;
     padding-right: 40px;
@@ -526,7 +526,7 @@ body {
     margin: 120px 30px 40px 30px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 1199px) {
   .my-element-info {
     padding-top: 40px;
     font-size: 16px;
