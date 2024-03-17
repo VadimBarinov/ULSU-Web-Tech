@@ -36,7 +36,6 @@ function inputCheck(el) {
   const inputValue = el.value;
   const inputReg = el.getAttribute("data-reg");
   const reg = new RegExp(inputReg);
-  console.log(inputValue, reg);
   if (reg.test(inputValue)) {
     el.setAttribute("is-valid", "1");
     el.style.border = "2px solid rgb(0, 196, 0)";
@@ -49,10 +48,15 @@ function inputCheck(el) {
 function buttonHandler(e) {
   var isAllValid = 1;
   validLoginFormArr.forEach((el) => {
-    if (el.getAttribute("is-valid") == 0) isAllValid = 0;
+    console.log(el.value); // лог в консоль
+    const inputHidenLabel = document.querySelector(
+      "." + el.getAttribute("name") + "Error"
+    );
+    if (el.getAttribute("is-valid") == 0) {
+      isAllValid = 0;
+      inputHidenLabel.classList.add("open");
+    } else inputHidenLabel.classList.remove("open");
   });
-
-  console.log(isAllValid);
 
   if (!Boolean(Number(isAllValid))) {
     e.preventDefault();

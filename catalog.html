@@ -69,26 +69,31 @@
                 >
                 <input
                   class="form-control"
-                  placeholder="name@mail.com"
                   type="text"
                   id="loginFormEmail"
                   name="loginFormEmail"
                   data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
                   required
                 />
+                <p
+                  class="col-form-label-red loginFormEmailError"
+                  id="loginFormEmailError"
+                  name="loginFormEmailError"
+                >
+                  В формате: name@mail.com
+                </p>
               </div>
               <div class="mb-3 input-box">
                 <label for="loginFormPassword" class="col-form-label"
-                  >Пароль (от 8 символов):</label
+                  >Пароль:</label
                 >
                 <div class="password">
                   <input
                     type="password"
                     class="form-control"
-                    placeholder="Без кириллицы и пробелов"
                     id="loginFormPassword"
                     name="loginFormPassword"
-                    data-reg="^[^а-яА-ЯёЁ^\s]{8,}$"
+                    data-reg="^[^]{8,40}$"
                     required
                   />
                   <a
@@ -96,6 +101,13 @@
                     class="password-control"
                     onclick="return show_hide_password_login(this);"
                   ></a>
+                  <p
+                    class="col-form-label-red loginFormPasswordError"
+                    id="loginFormPasswordError"
+                    name="loginFormPasswordError"
+                  >
+                    От 8 символов
+                  </p>
                 </div>
               </div>
               <div class="modal-footer-btn">
@@ -144,25 +156,37 @@
                 <label for="regFormName" class="col-form-label">Имя:</label>
                 <input
                   class="form-control"
-                  placeholder="Только буквы"
                   type="text"
                   id="regFormName"
                   name="regFormName"
-                  data-reg="^[A-Z-А-Я][a-z-а-яё]{1,30}$"
+                  data-reg="^[^]{1,30}$"
                   required
                 />
+                <p
+                  class="col-form-label-red regFormNameError"
+                  id="regFormNameError"
+                  name="regFormNameError"
+                >
+                  Не более 30 символов
+                </p>
               </div>
               <div class="mb-3 input-box">
                 <label for="regFormEmail" class="col-form-label">Email:</label>
                 <input
                   class="form-control"
-                  placeholder="name@mail.com"
                   type="text"
                   id="regFormEmail"
                   name="regFormEmail"
                   data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
                   required
                 />
+                <p
+                  class="col-form-label-red regFormEmailError"
+                  id="regFormEmailError"
+                  name="regFormEmailError"
+                >
+                  В формате: name@mail.com
+                </p>
               </div>
               <div class="mb-3 input-box">
                 <label for="regFormPassword" class="col-form-label"
@@ -172,10 +196,9 @@
                   <input
                     type="password"
                     class="form-control"
-                    placeholder="Без кириллицы и пробелов"
                     id="regFormPassword"
                     name="regFormPassword"
-                    data-reg="^[^а-яА-ЯёЁ^\s]{8,}$"
+                    data-reg="^[^]{8,40}$"
                     required
                   />
                   <a
@@ -183,6 +206,13 @@
                     class="password-control"
                     onclick="return show_hide_password_reg(this);"
                   ></a>
+                  <p
+                    class="col-form-label-red regFormPasswordError"
+                    id="regFormPasswordError"
+                    name="regFormPasswordError"
+                  >
+                    От 8 символов
+                  </p>
                 </div>
               </div>
               <div class="modal-footer-btn">
@@ -732,5 +762,7 @@
       </div>
     </div>
     <script src="js/functions.js"></script>
+    <script src="js/scriptLoginForm.js"></script>
+    <script src="js/scriptRegForm.js"></script>
   </body>
 </html>

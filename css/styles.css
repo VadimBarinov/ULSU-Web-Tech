@@ -299,8 +299,17 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: black;
-  padding-left: 12px;
 }
+.col-form-label-red {
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+  opacity: 0;
+}
+.open {
+  opacity: 100;
+}
+
 .form-control:focus {
   border-color: black;
   outline: 0;
