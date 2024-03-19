@@ -31,6 +31,19 @@ body {
   float: right;
   order: 1;
 }
+.my-nav-box-name {
+  margin-inline: 20px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.my-nav-box-name img {
+  margin-left: 10px;
+}
+.my-nav-box-btn-out {
+  padding-right: 0px;
+}
 @media (min-width: 1000px) {
   .my-btn-box-1-lg {
     text-align: center;

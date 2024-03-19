@@ -231,6 +231,55 @@
         </div>
       </div>
     </div>
+
+    <!-- форма стереть избранное -->
+    <div
+      class="modal fade"
+      id="goOutModal"
+      tabindex="-1"
+      aria-labelledby="goOutModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <div class="my-modal-close-btn">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div>
+            <h1 class="modal-title fs-5 my-modal-title" id="goOutModalLabel">
+              Вы действительно хотите выйти?
+            </h1>
+          </div>
+          <div class="modal-footer my-modal-footer-clear">
+            <!-- временное решение для демонстрации -->
+            <!-- нужно будет сделать метод на js и убрать ссылку -->
+            <button
+              type="button"
+              class="btn btn-outline-primary me-2"
+              onclick="window.location.href = 'index.html'"
+            >
+              Да
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Отмена
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- навигация -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -272,46 +321,36 @@
             </li>
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
-              <button
-                class="btn btn-outline-primary me-2"
-                data-bs-toggle="modal"
-                data-bs-target="#regModal"
-                type="button"
-              >
-                Регистрация
-              </button>
+              <p class="my-nav-box-name">
+                Вадим <img src="res/profile_icon.svg" width="50" />
+              </p>
             </li>
             <li class="my-btn-box-2-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
               <button
-                class="btn btn-primary"
+                class="btn btn-outline-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#loginModal"
+                data-bs-target="#goOutModal"
                 type="button"
               >
-                Войти
+                Выйти
               </button>
             </li>
             <li class="my-btn-box-1-sm">
               <!-- кнопки регистрации и входа МАЛЕНЬКИЙ ЭКРАН -->
-              <button
-                class="btn btn-outline-primary me-2"
-                data-bs-toggle="modal"
-                data-bs-target="#regModal"
-                type="button"
-              >
-                Регистрация
-              </button>
+              <p class="my-nav-box-name">
+                Вадим <img src="res/profile_icon.svg" width="50" />
+              </p>
             </li>
             <li class="my-btn-box-2-sm">
               <!-- кнопки регистрации и входа МАЛЕНЬКИЙ ЭКРАН -->
               <button
-                class="btn btn-primary"
+                class="btn btn-outline-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#loginModal"
+                data-bs-target="#goOutModal"
                 type="button"
               >
-                Войти
+                Выйти
               </button>
             </li>
           </ul>
@@ -612,7 +651,7 @@
                   ><img src="res/grad_heart.svg" alt=""
                 /></a>
                 <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-outline-primary me-2" type="button">
+                  <button class="btn btn-outline-primary" type="button">
                     В избранном
                   </button>
                 </div>
@@ -674,7 +713,7 @@
                   ><img src="res/grad_heart.svg" alt=""
                 /></a>
                 <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-outline-primary me-2" type="button">
+                  <button class="btn btn-outline-primary" type="button">
                     В избранном
                   </button>
                 </div>
@@ -736,7 +775,7 @@
                   ><img src="res/grad_heart.svg" alt=""
                 /></a>
                 <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-outline-primary me-2" type="button">
+                  <button class="btn btn-outline-primary" type="button">
                     В избранном
                   </button>
                 </div>
