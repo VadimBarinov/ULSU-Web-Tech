@@ -318,28 +318,47 @@
       </div>
     </nav>
 
+    <!-- фильтр -->
+    <div class="container">
+      <div class="my-catalog-filter">
+        <form id="searchForm" name="searchForm">
+          <div class="mb-3 input-box my-search-box">
+            <input
+              class="form-control"
+              placeholder="Поиск"
+              type="text"
+              id="searchFormValue"
+              name="searchFormValue"
+              required
+            />
+            <img src="res/search.svg" class="my-search-icon" />
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- карточки -->
     <div class="container my-5">
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 my-card-container"
       >
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/gt_aggressor.jpg" class="card-img-top" />
+            <!-- временная замена чтобы показать поиск -->
             <div class="card-body">
-              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <h5 class="card-title">GT 27.5 AGGRESSOR SPORT</h5>
               <p class="card-text">
-                Radius - продвинутая модель для прогулочного и спортивного
-                катания. Отлично подходит для прогулочного и тренировочного
-                катания, так-же имеет задел для старта в любительских
-                кросс-кантри гонках.
+                Только начинаете свой путь в мир маунтинбайка или уже являетесь
+                опытным специалистом в неспешных поездках по городу и за его
+                пределами – с самым универсальным и самым доступным в серии
+                AGGRESSOR SPORT каждый ваш выезд будет сопровождаться комфортом
+                и удовольствием. Как и более дорогие трейл-хартейлы, этот байк
+                оборудован качественными компонентами комплектации и представлен
+                в двух вариантах.
               </p>
               <div class="d-flex align-items-center">
                 <a href="#" class="btn-favorites"
@@ -354,16 +373,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element_not_favorite.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -385,23 +400,25 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/jamis_durango.jpg" class="card-img-top" />
+            <!-- временная замена чтобы показать поиск -->
             <div class="card-body">
-              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <h5 class="card-title">Jamis DURANGO A2</h5>
               <p class="card-text">
-                Radius - продвинутая модель для прогулочного и спортивного
-                катания. Отлично подходит для прогулочного и тренировочного
-                катания, так-же имеет задел для старта в любительских
-                кросс-кантри гонках.
+                Горный велосипед, построенный на легкой алюминиевой раме и
+                укомплектованный большими колесами не обязан быть непременно
+                гоночным и дорогим. Если более расслабленная, чем спортивная,
+                посадка не делает вас намного медленнее, если вы считаете, что
+                дорогие гоночные компоненты не стоят больших вложений, а лучший
+                приз, ожидающий вас в конце поездки – заряд бодрости и
+                удовольствия, Durango А2 полностью оправдает ваши ожидания и
+                приятно обрадует не только своей надежностью и ценой, но и
+                уверенной управляемостью.
               </p>
               <div class="d-flex align-items-center">
                 <a href="#" class="btn-favorites"
@@ -416,16 +433,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element_not_favorite.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -447,23 +460,28 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_rudeway.jpg" class="card-img-top" />
             <div class="card-body">
-              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
+              <h5 class="card-title">Outleap RUDEWAY A3</h5>
               <p class="card-text">
-                Radius - продвинутая модель для прогулочного и спортивного
-                катания. Отлично подходит для прогулочного и тренировочного
-                катания, так-же имеет задел для старта в любительских
-                кросс-кантри гонках.
+                Верхний сегмент универсальных алю-грэвелов - Rudeway A. Как и
+                положено старшей модели, он собран на крепких и легких
+                компонентах, подобранных таким образом, чтобы обеспечивать
+                универсальность и скоростные характеристики. Рама в дизайне AGG
+                (Adventure Gravel Geometry) создана для гравийных покатушек и
+                скоростных поездок по асфальту. Так-же были обновлены основные
+                трубы рамы, добавлены технологии гидроформинга и баттинга, что
+                позволило снизить вес рамы. Rudeway A предназначен для скорости
+                и универсальности, на таком "снаряде" можно проехать бревет или
+                отправиться в многодневное путешествие. Универсальный велосипед,
+                только вам решать, каким он будет сегодня: загруженным под
+                завязку турингом, агрессивным грэвелом или же коммутером с
+                багажником.
               </p>
               <div class="d-flex align-items-center">
                 <a href="#" class="btn-favorites"
@@ -478,16 +496,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element_not_favorite.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -509,16 +523,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -540,16 +550,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element_not_favorite.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -571,16 +577,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -602,16 +604,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element_not_favorite.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -633,16 +631,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -664,16 +658,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-card-col">
           <div
             class="card border"
             onclick="window.location.href = 'element_not_favorite.html'"
           >
-            <img
-              src="res/outleap_radius.png"
-              class="card-img-top"
-              alt="Outleap RADIUS ELITE 29"
-            />
+            <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
               <p class="card-text">
@@ -764,5 +754,6 @@
     <script src="js/functions.js"></script>
     <script src="js/scriptLoginForm.js"></script>
     <script src="js/scriptRegForm.js"></script>
+    <script src="js/catalogFilter.js"></script>
   </body>
 </html>

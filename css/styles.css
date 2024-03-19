@@ -198,11 +198,13 @@ body {
 .carousel-image-lg {
   object-fit: contain;
   margin: auto;
+  height: 368px;
 }
 .carousel-image-sm {
   object-fit: contain;
   margin: auto;
   padding-top: 40px;
+  height: 368px;
 }
 .carousel-text-lg {
   padding-left: 100px;
@@ -214,12 +216,28 @@ body {
 .carousel-text-sm h5 {
   font-size: 26px;
   font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 72px;
 }
 .carousel-text-lg p,
 .carousel-text-sm p {
   font-size: 16px;
   font-weight: 500;
   color: #595c5f;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 310px;
+}
+.carousel-text-lg p:after,
+.carousel-text-sm p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(180deg, transparent, white 50%);
 }
 .my-border {
   border-radius: 8px;
@@ -246,6 +264,15 @@ body {
   background: white;
   color: black;
   box-shadow: inset 0 0 0 2.1px black;
+}
+.card-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 170px;
+}
+.card-img-top {
+  height: 224px;
+  object-fit: contain;
 }
 .my-card-container {
   margin-left: -68px;
@@ -592,14 +619,37 @@ body {
 }
 .password-control {
   position: absolute;
-  top: 11px;
-  right: 6px;
+  top: 8px;
+  right: 0px;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-right: 6px;
   background: url(/res/view-password.svg) 0 0 no-repeat;
 }
 .password-control.view {
   background: url(/res/no-view-password.svg) 0 0 no-repeat;
+}
+
+.my-catalog-filter {
+  width: 340px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.my-search-box {
+  position: relative;
+}
+.my-search-icon {
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+}
+
+.hide-card {
+  display: none;
 }

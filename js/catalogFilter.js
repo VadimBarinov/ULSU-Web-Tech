@@ -1,0 +1,33 @@
+const searchForm = document.forms["searchForm"]; // считываем форму
+
+const allCards = document.querySelectorAll(".my-card-col");
+
+searchForm.addEventListener("input", inputHandler);
+
+addEventListener("keydown", (e) => {
+  // не срабатывает enter
+  if (e.key === "Enter") e.preventDefault();
+});
+
+function inputHandler({ target }) {
+  inputCheck(target);
+}
+
+function inputCheck(el) {
+  const inputValue = el.value;
+  console.log(inputValue);
+
+  allCards.forEach((card) => {
+    const thisCardTitle = card.querySelector(".card-title").textContent;
+    const thisCardText = card.querySelector(".card-text").textContent;
+
+    if (
+      thisCardTitle.toLowerCase().indexOf(inputValue.toLowerCase()) != -1 ||
+      thisCardText.toLowerCase().indexOf(inputValue.toLowerCase()) != -1
+    ) {
+      card.classList.remove("hide-card");
+    } else {
+      card.classList.add("hide-card");
+    }
+  });
+}
