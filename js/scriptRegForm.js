@@ -63,8 +63,12 @@ function buttonHandler(e) {
     );
     if (el.getAttribute("is-valid") == 0) {
       isAllValid = 0;
+      el.style.border = "2px solid rgb(255, 0, 0)";
       inputHidenLabel.classList.add("open");
-    } else inputHidenLabel.classList.remove("open");
+    } else {
+      el.style.border = "2px solid rgb(0, 196, 0)";
+      inputHidenLabel.classList.remove("open");
+    }
   });
 
   if (!Boolean(Number(isAllValid))) {
