@@ -168,6 +168,7 @@ body {
     float: left;
     margin-right: 10px;
     padding: 100px 150px 100px 150px;
+    cursor: pointer;
   }
   .carousel-container-sm {
     display: none;
@@ -176,6 +177,7 @@ body {
 @media (max-width: 1199px) {
   .carousel-container-sm {
     padding: 40px 80px 60px 80px;
+    cursor: pointer;
   }
   .carousel-container-lg {
     display: none;
@@ -183,6 +185,7 @@ body {
 }
 @media (max-width: 769px) {
   .carousel-container-sm {
+    cursor: pointer;
     padding: 20px 20px 60px 20px;
   }
   .carousel-control-prev {
@@ -549,6 +552,7 @@ body {
 .my-element-img {
   object-fit: contain;
   margin: auto;
+  height: 400;
 }
 @media (min-width: 1200px) {
   .my-element-info {
