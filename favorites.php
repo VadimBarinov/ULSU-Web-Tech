@@ -262,7 +262,7 @@
             <button
               type="button"
               class="btn btn-outline-primary me-2"
-              onclick="window.location.href = 'favorites.html'"
+              onclick="window.location.href = 'favorites.php'"
             >
               Стереть
             </button>
@@ -282,7 +282,7 @@
     <!-- навигация -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand p-0" href="main.html">
+        <a class="navbar-brand p-0" href="main.php">
           <img src="res/logo.svg" alt="Logo" width="60" />
         </a>
         <button
@@ -302,21 +302,21 @@
           >
             <li class="nav-item">
               <!-- ссылка на главную -->
-              <a class="nav-link" aria-current="page" href="main.html"
+              <a class="nav-link" aria-current="page" href="main.php"
                 >Главная</a
               >
             </li>
             <li class="nav-item">
               <!-- ссылка на каталог -->
-              <a class="nav-link" href="catalog.html">Каталог</a>
+              <a class="nav-link" href="catalog.php">Каталог</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на избранное -->
-              <a class="nav-link active" href="favorites.html">Избранное</a>
+              <a class="nav-link active" href="favorites.php">Избранное</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на о себе -->
-              <a class="nav-link" href="information.html">О себе</a>
+              <a class="nav-link" href="information.php">О себе</a>
             </li>
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
@@ -393,7 +393,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/gt_aggressor.jpg" class="card-img-top" />
             <div class="card-body">
@@ -423,7 +423,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -450,7 +450,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/jamis_durango.jpg" class="card-img-top" />
             <div class="card-body">
@@ -482,7 +482,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -509,7 +509,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_rudeway.jpg" class="card-img-top" />
             <div class="card-body">
@@ -545,7 +545,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -572,7 +572,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -599,7 +599,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -626,7 +626,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -653,7 +653,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -680,7 +680,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -707,7 +707,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -754,7 +754,7 @@
         <div class="col mb-3">
           <div class="d-flex align-items-end">
             <a
-              href="main.html"
+              href="main.php"
               class="mb-3 link-body-emphasis text-decoration-none"
             >
               <img src="res/logo.svg" alt="Logo" width="60" />
@@ -774,28 +774,28 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
               <a
-                href="information.html"
+                href="information.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >О себе</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="main.html"
+                href="main.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Главная</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="catalog.html"
+                href="catalog.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >Каталог</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="favorites.html"
+                href="favorites.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Избранное</a
               >

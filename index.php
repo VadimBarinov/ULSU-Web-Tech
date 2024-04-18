@@ -6,6 +6,14 @@ spl_autoload_register(function ($class) {
 
 $PDO = PdoConnect::getInstance();
 
-var_dump($PDO);
+$result = $PDO->PDO->query("
+    SELECT * FROM products
+");
 
-die();
+$products = array();
+
+while ($productInfo = $result -> fetch()) {
+    $products[] = $productInfo;
+}
+
+include 'main.php';

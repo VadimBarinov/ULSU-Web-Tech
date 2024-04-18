@@ -233,7 +233,7 @@
     <!-- навигация -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand p-0" href="main.html">
+        <a class="navbar-brand p-0" href="main.php">
           <img src="res/logo.svg" alt="Logo" width="60" />
         </a>
         <button
@@ -253,21 +253,21 @@
           >
             <li class="nav-item">
               <!-- ссылка на главную -->
-              <a class="nav-link" aria-current="page" href="main.html"
+              <a class="nav-link" aria-current="page" href="main.php"
                 >Главная</a
               >
             </li>
             <li class="nav-item">
               <!-- ссылка на каталог -->
-              <a class="nav-link active" href="catalog.html">Каталог</a>
+              <a class="nav-link active" href="catalog.php">Каталог</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на избранное -->
-              <a class="nav-link" href="favorites.html">Избранное</a>
+              <a class="nav-link" href="favorites.php">Избранное</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на о себе -->
-              <a class="nav-link" href="information.html">О себе</a>
+              <a class="nav-link" href="information.php">О себе</a>
             </li>
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
@@ -350,12 +350,13 @@
             имеет задел для старта в любительских кросс-кантри
             гонках.Обновленная рама представлена в геометрии MXG (Modern
             X-Country Geometry), но в отличии от старшей модели Vector, имеет
-            прицел в сторону комфорта:• Заваленный угол рулевой в 68 градусов
-            даст хорошую проходимость и плавное управление на скорости•
-            Удлинённый передний треугольник предлагает современную спортивную
-            посадку с улучшенным комфортом• Короткий задний треугольник добавит
-            маневренности и ускорения• Заниженный стендовер для большей свободы
-            в движении над байком и низкий центр масс
+            прицел в сторону комфорта:<br />• Заваленный угол рулевой в 68
+            градусов даст хорошую проходимость и плавное управление на скорости
+            <br />• Удлинённый передний треугольник предлагает современную
+            спортивную посадку с улучшенным комфортом<br />• Короткий задний
+            треугольник добавит маневренности и ускорения<br />• Заниженный
+            стендовер для большей свободы в движении над байком и низкий центр
+            масс
           </p>
         </div>
       </div>
@@ -433,7 +434,7 @@
         <div class="col mb-3">
           <div class="d-flex align-items-end">
             <a
-              href="main.html"
+              href="main.php"
               class="mb-3 link-body-emphasis text-decoration-none"
             >
               <img src="res/logo.svg" alt="Logo" width="60" />
@@ -453,28 +454,28 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
               <a
-                href="information.html"
+                href="information.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >О себе</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="main.html"
+                href="main.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Главная</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="catalog.html"
+                href="catalog.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >Каталог</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="favorites.html"
+                href="favorites.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Избранное</a
               >

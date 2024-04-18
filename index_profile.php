@@ -158,7 +158,7 @@
             <button
               type="button"
               class="btn btn-outline-primary me-2"
-              onclick="window.location.href = 'main.html'"
+              onclick="window.location.href = 'main.php'"
             >
               Да
             </button>
@@ -178,7 +178,7 @@
     <!-- навигация -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand p-0" href="main.html">
+        <a class="navbar-brand p-0" href="main.php">
           <img src="res/logo.svg" alt="Logo" width="60" />
         </a>
         <button
@@ -198,21 +198,21 @@
           >
             <li class="nav-item">
               <!-- ссылка на главную -->
-              <a class="nav-link active" aria-current="page" href="main.html"
+              <a class="nav-link active" aria-current="page" href="main.php"
                 >Главная</a
               >
             </li>
             <li class="nav-item">
               <!-- ссылка на каталог -->
-              <a class="nav-link" href="catalog.html">Каталог</a>
+              <a class="nav-link" href="catalog.php">Каталог</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на избранное -->
-              <a class="nav-link" href="favorites.html">Избранное</a>
+              <a class="nav-link" href="favorites.php">Избранное</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на о себе -->
-              <a class="nav-link" href="information.html">О себе</a>
+              <a class="nav-link" href="information.php">О себе</a>
             </li>
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
@@ -297,7 +297,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/outleap_radius.png"
@@ -324,7 +324,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/outleap_radius.png"
@@ -353,7 +353,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/gt_aggressor.jpg"
@@ -374,7 +374,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/gt_aggressor.jpg"
@@ -397,7 +397,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/jamis_durango.jpg"
@@ -420,7 +420,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/jamis_durango.jpg"
@@ -445,7 +445,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/outleap_rudeway.jpg"
@@ -472,7 +472,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/outleap_rudeway.jpg"
@@ -525,7 +525,7 @@
     <!-- открывает каталог -->
     <div class="container my-view-all">
       <div class="my-view-all-container">
-        <a class="nav-link" aria-current="page" href="catalog.html">
+        <a class="nav-link" aria-current="page" href="catalog.php">
           Посмотреть все <img src="res/right.svg" alt="" />
         </a>
       </div>
@@ -539,7 +539,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element.html'"
+            onclick="window.location.href = 'element.php'"
           >
             <img src="res/gt_aggressor.jpg" class="card-img-top" />
             <!-- временная замена чтобы показать поиск -->
@@ -570,7 +570,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -597,7 +597,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element.html'"
+            onclick="window.location.href = 'element.php'"
           >
             <img src="res/jamis_durango.jpg" class="card-img-top" />
             <!-- временная замена чтобы показать поиск -->
@@ -630,7 +630,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -657,7 +657,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element.html'"
+            onclick="window.location.href = 'element.php'"
           >
             <img src="res/outleap_rudeway.jpg" class="card-img-top" />
             <div class="card-body">
@@ -693,7 +693,7 @@
         <div class="col my-card-col">
           <div
             class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
+            onclick="window.location.href = 'element_not_favorite.php'"
           >
             <img src="res/outleap_radius.png" class="card-img-top" />
             <div class="card-body">
@@ -728,7 +728,7 @@
         <div class="col mb-3">
           <div class="d-flex align-items-end">
             <a
-              href="main.html"
+              href="main.php"
               class="mb-3 link-body-emphasis text-decoration-none"
             >
               <img src="res/logo.svg" alt="Logo" width="60" />
@@ -748,28 +748,28 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
               <a
-                href="information.html"
+                href="information.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >О себе</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="main.html"
+                href="main.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Главная</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="catalog.html"
+                href="catalog.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >Каталог</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="favorites.html"
+                href="favorites.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Избранное</a
               >

@@ -63,7 +63,7 @@
           </div>
           <div class="modal-body">
             <!-- временно указываю на другую страницу (action) -->
-            <form action="index_profile.html" id="loginForm" name="loginForm">
+            <form action="index_profile.php" id="loginForm" name="loginForm">
               <div class="mb-3 input-box">
                 <label for="loginFormEmail" class="col-form-label"
                   >Email:</label
@@ -152,7 +152,7 @@
             </h1>
           </div>
           <div class="modal-body">
-            <form action="index_profile.html" id="regForm" name="regForm">
+            <form action="index_profile.php" id="regForm" name="regForm">
               <div class="mb-3 input-box">
                 <label for="regFormName" class="col-form-label">Имя:</label>
                 <input
@@ -234,7 +234,7 @@
     <!-- навигация -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand p-0" href="main.html">
+        <a class="navbar-brand p-0" href="main.php">
           <img src="res/logo.svg" alt="Logo" width="60" />
         </a>
         <button
@@ -254,21 +254,21 @@
           >
             <li class="nav-item">
               <!-- ссылка на главную -->
-              <a class="nav-link active" aria-current="page" href="main.html"
+              <a class="nav-link active" aria-current="page" href="main.php"
                 >Главная</a
               >
             </li>
             <li class="nav-item">
               <!-- ссылка на каталог -->
-              <a class="nav-link" href="catalog.html">Каталог</a>
+              <a class="nav-link" href="catalog.php">Каталог</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на избранное -->
-              <a class="nav-link" href="favorites.html">Избранное</a>
+              <a class="nav-link" href="favorites.php">Избранное</a>
             </li>
             <li class="nav-item">
               <!-- ссылка на о себе -->
-              <a class="nav-link" href="information.html">О себе</a>
+              <a class="nav-link" href="information.php">О себе</a>
             </li>
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
@@ -363,7 +363,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/outleap_radius.png"
@@ -390,7 +390,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/outleap_radius.png"
@@ -419,7 +419,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/gt_aggressor.jpg"
@@ -440,7 +440,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/gt_aggressor.jpg"
@@ -463,7 +463,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/jamis_durango.jpg"
@@ -486,7 +486,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element.html'"
+              onclick="window.location.href = 'element.php'"
             >
               <img
                 src="res/jamis_durango.jpg"
@@ -511,7 +511,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/outleap_rudeway.jpg"
@@ -538,7 +538,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element_not_favorite.html'"
+              onclick="window.location.href = 'element_not_favorite.php'"
             >
               <img
                 src="res/outleap_rudeway.jpg"
@@ -591,7 +591,7 @@
     <!-- открывает каталог -->
     <div class="container my-view-all">
       <div class="my-view-all-container">
-        <a class="nav-link" aria-current="page" href="catalog.html">
+        <a class="nav-link" aria-current="page" href="catalog.php">
           Посмотреть все <img src="res/right.svg" alt="" />
         </a>
       </div>
@@ -602,187 +602,32 @@
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 my-card-container"
       >
-        <div class="col my-card-col">
-          <div
-            class="card border"
-            onclick="window.location.href = 'element.html'"
-          >
-            <img src="res/gt_aggressor.jpg" class="card-img-top" />
-            <!-- временная замена чтобы показать поиск -->
-            <div class="card-body">
-              <h5 class="card-title">GT 27.5 AGGRESSOR SPORT</h5>
-              <p class="card-text">
-                Только начинаете свой путь в мир маунтинбайка или уже являетесь
-                опытным специалистом в неспешных поездках по городу и за его
-                пределами – с самым универсальным и самым доступным в серии
-                AGGRESSOR SPORT каждый ваш выезд будет сопровождаться комфортом
-                и удовольствием. Как и более дорогие трейл-хартейлы, этот байк
-                оборудован качественными компонентами комплектации и представлен
-                в двух вариантах.
-              </p>
-              <div class="d-flex align-items-center">
-                <a href="#" class="btn-favorites"
-                  ><img src="res/black_heart.svg" alt=""
-                /></a>
-                <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-primary" type="button">
-                    В избранное
-                  </button>
+        <?foreach ($products as $product):?>
+          <div class="col my-card-col">
+            <div
+              class="card border"
+              onclick="window.location.href = 'element.php'"
+            >
+              <img src="<?=$product['image']?>" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title"><?=$product['name']?></h5>
+                <p class="card-text">
+                <?=$product['description']?>
+                </p>
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn-favorites"
+                    ><img src="res/black_heart.svg" alt=""
+                  /></a>
+                  <div class="my-card-btn btn-favorites">
+                    <button class="btn btn-primary" type="button">
+                      В избранное
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col my-card-col">
-          <div
-            class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
-          >
-            <img src="res/outleap_radius.png" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
-              <p class="card-text">
-                Radius - продвинутая модель для прогулочного и спортивного
-                катания. Отлично подходит для прогулочного и тренировочного
-                катания, так-же имеет задел для старта в любительских
-                кросс-кантри гонках.
-              </p>
-              <div class="d-flex align-items-center">
-                <a href="#" class="btn-favorites"
-                  ><img src="res/grad_heart.svg" alt=""
-                /></a>
-                <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-outline-primary" type="button">
-                    В избранном
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col my-card-col">
-          <div
-            class="card border"
-            onclick="window.location.href = 'element.html'"
-          >
-            <img src="res/jamis_durango.jpg" class="card-img-top" />
-            <!-- временная замена чтобы показать поиск -->
-            <div class="card-body">
-              <h5 class="card-title">Jamis DURANGO A2</h5>
-              <p class="card-text">
-                Горный велосипед, построенный на легкой алюминиевой раме и
-                укомплектованный большими колесами не обязан быть непременно
-                гоночным и дорогим. Если более расслабленная, чем спортивная,
-                посадка не делает вас намного медленнее, если вы считаете, что
-                дорогие гоночные компоненты не стоят больших вложений, а лучший
-                приз, ожидающий вас в конце поездки – заряд бодрости и
-                удовольствия, Durango А2 полностью оправдает ваши ожидания и
-                приятно обрадует не только своей надежностью и ценой, но и
-                уверенной управляемостью.
-              </p>
-              <div class="d-flex align-items-center">
-                <a href="#" class="btn-favorites"
-                  ><img src="res/black_heart.svg" alt=""
-                /></a>
-                <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-primary" type="button">
-                    В избранное
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col my-card-col">
-          <div
-            class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
-          >
-            <img src="res/outleap_radius.png" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
-              <p class="card-text">
-                Radius - продвинутая модель для прогулочного и спортивного
-                катания. Отлично подходит для прогулочного и тренировочного
-                катания, так-же имеет задел для старта в любительских
-                кросс-кантри гонках.
-              </p>
-              <div class="d-flex align-items-center">
-                <a href="#" class="btn-favorites"
-                  ><img src="res/grad_heart.svg" alt=""
-                /></a>
-                <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-outline-primary" type="button">
-                    В избранном
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col my-card-col">
-          <div
-            class="card border"
-            onclick="window.location.href = 'element.html'"
-          >
-            <img src="res/outleap_rudeway.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Outleap RUDEWAY A3</h5>
-              <p class="card-text">
-                Верхний сегмент универсальных алю-грэвелов - Rudeway A. Как и
-                положено старшей модели, он собран на крепких и легких
-                компонентах, подобранных таким образом, чтобы обеспечивать
-                универсальность и скоростные характеристики. Рама в дизайне AGG
-                (Adventure Gravel Geometry) создана для гравийных покатушек и
-                скоростных поездок по асфальту. Так-же были обновлены основные
-                трубы рамы, добавлены технологии гидроформинга и баттинга, что
-                позволило снизить вес рамы. Rudeway A предназначен для скорости
-                и универсальности, на таком "снаряде" можно проехать бревет или
-                отправиться в многодневное путешествие. Универсальный велосипед,
-                только вам решать, каким он будет сегодня: загруженным под
-                завязку турингом, агрессивным грэвелом или же коммутером с
-                багажником.
-              </p>
-              <div class="d-flex align-items-center">
-                <a href="#" class="btn-favorites"
-                  ><img src="res/black_heart.svg" alt=""
-                /></a>
-                <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-primary" type="button">
-                    В избранное
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col my-card-col">
-          <div
-            class="card border"
-            onclick="window.location.href = 'element_not_favorite.html'"
-          >
-            <img src="res/outleap_radius.png" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Outleap RADIUS ELITE 29</h5>
-              <p class="card-text">
-                Radius - продвинутая модель для прогулочного и спортивного
-                катания. Отлично подходит для прогулочного и тренировочного
-                катания, так-же имеет задел для старта в любительских
-                кросс-кантри гонках.
-              </p>
-              <div class="d-flex align-items-center">
-                <a href="#" class="btn-favorites"
-                  ><img src="res/grad_heart.svg" alt=""
-                /></a>
-                <div class="my-card-btn btn-favorites">
-                  <button class="btn btn-outline-primary" type="button">
-                    В избранном
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?endforeach?>
       </div>
     </div>
 
@@ -794,7 +639,7 @@
         <div class="col mb-3">
           <div class="d-flex align-items-end">
             <a
-              href="main.html"
+              href="main.php"
               class="mb-3 link-body-emphasis text-decoration-none"
             >
               <img src="res/logo.svg" alt="Logo" width="60" />
@@ -814,28 +659,28 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
               <a
-                href="information.html"
+                href="information.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >О себе</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="main.html"
+                href="main.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Главная</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="catalog.html"
+                href="catalog.php"
                 class="nav-link p-1 footer-text-14 color-text-grey"
                 >Каталог</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="favorites.html"
+                href="favorites.php"
                 class="nav-link p-1 footer-text-14 color-text-red"
                 >Избранное</a
               >
