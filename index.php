@@ -7,7 +7,7 @@ spl_autoload_register(function ($class) {
 $PDO = PdoConnect::getInstance();
 
 $result = $PDO->PDO->query("
-    SELECT * FROM products
+    SELECT * FROM products LIMIT 3
 ");
 
 $products = array();
