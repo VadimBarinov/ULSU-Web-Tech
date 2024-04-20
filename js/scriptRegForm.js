@@ -95,7 +95,7 @@ function buttonHandler(e) {
           inputHidenLabelEmail.textContent = "Такой Email уже существует";
           inputHidenLabelEmail.classList.add("open");
         } else {
-          // нужно сделать закрытие окна
+          $("[id=regModal]").modal("hide");
         }
       },
     });
