@@ -48,7 +48,6 @@ function inputCheck(el) {
 function buttonHandler(e) {
   var isAllValid = 1;
   validLoginFormArr.forEach((el) => {
-    console.log(el.value); // лог в консоль
     const inputHidenLabel = document.querySelector(
       "." + el.getAttribute("name") + "Error"
     );
@@ -65,6 +64,7 @@ function buttonHandler(e) {
   if (!Boolean(Number(isAllValid))) {
     e.preventDefault();
   } else {
-    loginForm.submit();
+    //loginForm.submit();
+    //нужно сделать обработку данных
   }
 }

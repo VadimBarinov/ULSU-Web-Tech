@@ -56,8 +56,11 @@ function inputCheck(el) {
 
 function buttonHandler(e) {
   var isAllValid = 1;
+  const inputHidenLabelEmail = document.querySelector(
+    "." + validRegFormArr[1].getAttribute("name") + "Error"
+  );
+  inputHidenLabelEmail.textContent = "В формате: name@mail.com";
   validRegFormArr.forEach((el) => {
-    console.log(el.value); // лог в консоль
     const inputHidenLabel = document.querySelector(
       "." + el.getAttribute("name") + "Error"
     );
@@ -74,6 +77,27 @@ function buttonHandler(e) {
   if (!Boolean(Number(isAllValid))) {
     e.preventDefault();
   } else {
-    loginForm.submit();
+    var url = "/reg.php";
+    var data = {
+      regFormName: $("[name=regFormName]").val(),
+      regFormEmail: $("[name=regFormEmail]").val(),
+      regFormPassword: $("[name=regFormPassword]").val(),
+    };
+
+    $.ajax({
+      url: url,
+      type: "POST",
+      data: data,
+      dataType: "json",
+      success: (response) => {
+        if (response["res"] == false) {
+          validRegFormArr[1].style.border = "2px solid rgb(255, 0, 0)";
+          inputHidenLabelEmail.textContent = "Такой Email уже существует";
+          inputHidenLabelEmail.classList.add("open");
+        } else {
+          // нужно сделать закрытие окна
+        }
+      },
+    });
   }
 }

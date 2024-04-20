@@ -25,7 +25,7 @@
           </div>
           <div class="modal-body">
             <!-- временно указываю на другую страницу (action) -->
-            <form action="index_profile.php" id="loginForm" name="loginForm">
+            <form id="loginForm" name="loginForm">
               <div class="mb-3 input-box">
                 <label for="loginFormEmail" class="col-form-label"
                   >Email:</label
@@ -114,7 +114,7 @@
             </h1>
           </div>
           <div class="modal-body">
-            <form action="index_profile.php" id="regForm" name="regForm">
+            <form id="regForm" name="regForm">
               <div class="mb-3 input-box">
                 <label for="regFormName" class="col-form-label">Имя:</label>
                 <input
@@ -130,7 +130,7 @@
                   id="regFormNameError"
                   name="regFormNameError"
                 >
-                  Не более 30 символов
+                  Поле обязательно для заполнения
                 </p>
               </div>
               <div class="mb-3 input-box">
