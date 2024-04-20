@@ -84,7 +84,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element.php'"
+              onclick="window.location.href = 'element.php?paramId=1'"
             >
               <img
                 src="res/outleap_radius.png"
@@ -111,7 +111,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element.php'"
+              onclick="window.location.href = 'element.php?paramId=1'"
             >
               <img
                 src="res/outleap_radius.png"
@@ -140,7 +140,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element_not_favorite.php'"
+              onclick="window.location.href = 'element.php?paramId=3'"
             >
               <img
                 src="res/gt_aggressor.jpg"
@@ -161,7 +161,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element_not_favorite.php'"
+              onclick="window.location.href = 'element.php?paramId=3'"
             >
               <img
                 src="res/gt_aggressor.jpg"
@@ -184,7 +184,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element.php'"
+              onclick="window.location.href = 'element.php?paramId=4'"
             >
               <img
                 src="res/jamis_durango.jpg"
@@ -207,7 +207,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element.php'"
+              onclick="window.location.href = 'element.php?paramId=4'"
             >
               <img
                 src="res/jamis_durango.jpg"
@@ -232,7 +232,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div
               class="carousel-container-lg"
-              onclick="window.location.href = 'element_not_favorite.php'"
+              onclick="window.location.href = 'element.php?paramId=5'"
             >
               <img
                 src="res/outleap_rudeway.jpg"
@@ -259,7 +259,7 @@
             </div>
             <div
               class="carousel-container-sm"
-              onclick="window.location.href = 'element_not_favorite.php'"
+              onclick="window.location.href = 'element.php?paramId=5'"
             >
               <img
                 src="res/outleap_rudeway.jpg"
@@ -327,7 +327,7 @@
           <div class="col my-card-col">
             <div
               class="card border"
-              onclick="window.location.href = 'element.php'"
+              onclick="window.location.href = 'element.php?paramId=<?=$product['id']?>'"
             >
               <img src="<?=$product['image']?>" class="card-img-top" />
               <div class="card-body">

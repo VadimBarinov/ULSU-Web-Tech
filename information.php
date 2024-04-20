@@ -49,21 +49,15 @@
           class="my-info-text-16 row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-sm-1 d-flex"
         >
           <p>
-            Eu non diam phasellus vestibulum lorem. Fringilla est ullamcorper
-            eget nulla facilisi etiam dignissim. Id diam vel quam elementum
-            pulvinar.
+            Меня зовут Баринов Вадим, и мне 19 лет. Я живу в небольшом городе Новоульяновске.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-            pellentesque at bibendum euismod tellus duis cursus dignissim odio.
-            Sit vulputate et integer in. Sit vel, senectus iaculis morbi. Amet
-            interdum imperdiet laoreet morbi tincidunt fermentum, libero. Ante
-            enim eget.
+            Мое самое любимое увлечение - катание на велосипеде. 
+            Такое хобби приносит очень большую пользу здоровью. Оно развивает тело физически, поддерживая тебя в тонусе. 
+            Но также велосипед полезен духовно. Сразу же исчезают мысли о проблемах, негатив уходит на задний план, настроение поднимается. 
           </p>
           <p>
-            Elementum eu facilisis sed odio morbi quis commodo. Sed odio morbi
-            quis commodo odio aenean sed adipiscing odio diam. uno fablotoson
-            louw uit.
+            Велоспорт - это отличное увлечение, которое будет полезно любому человеку. Оно подарит вам незабываемые впечатления и драйв.
           </p>
         </div>
       </div>
@@ -84,8 +78,7 @@
             <div class="my-info-card-text-lg">
               <h2>Баринов Вадим</h2>
               <p class="card-text">
-                Lorem ipsum dolor sit amet con sectet piscing elit, sed do
-                eiusmod tempor rarylet podofcast.
+                Студент 2 курса Ульяновского государственного университета факультета математики, информационных и авиационных технологий группы МОАИС-О-22/1
               </p>
             </div>
             <div class="my-btn-info-box">

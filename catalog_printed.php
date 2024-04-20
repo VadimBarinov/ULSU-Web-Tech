@@ -68,7 +68,7 @@
           <div class="col my-card-col">
             <div
               class="card border"
-              onclick="window.location.href = 'element.php'"
+              onclick="window.location.href = 'element.php?paramId=<?=$productCatalog['id']?>'"
             >
               <img src="<?=$productCatalog['image']?>" class="card-img-top" />
               <div class="card-body">
