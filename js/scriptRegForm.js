@@ -95,8 +95,15 @@ function buttonHandler(e) {
           inputHidenLabelEmail.textContent = "Такой Email уже существует";
           inputHidenLabelEmail.classList.add("open");
         } else {
+          $(".login-name-temp").html(
+            validRegFormArr[0].value +
+              ' <img src="res/profile_icon.svg" width="50" />'
+          );
+
           $("[id=regModal]").modal("hide"); // скрывается окно
           $("[id=nav_menu_unlogin]").css("display", "none"); // скрывается панель навигации
+          $("[id=nav_menu_unlogin_temp]").css("display", "none");
+          $("[id=nav_menu_login]").css("display", "block"); // скрывается панель навигации
           $("[id=nav_menu_login_temp]").css("display", "block");
         }
       },

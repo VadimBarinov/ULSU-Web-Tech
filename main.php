@@ -365,5 +365,6 @@
     <script src="js/functions.js"></script>
     <script src="js/scriptLoginForm.js"></script>
     <script src="js/scriptRegForm.js"></script>
+    <script src="js/goOut.js"></script>
   </body>
 </html>

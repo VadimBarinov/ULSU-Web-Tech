@@ -43,7 +43,11 @@
   <body>
     <?
       $page = 'catalog';
-      include 'nav_menu.php';
+      if($_COOKIE['id_login']){
+        include 'nav_menu_login.php';
+      } else {
+        include 'nav_menu.php';
+      }
     ?>
     <!-- фильтр -->
     <div class="container">
@@ -104,5 +108,6 @@
     <script src="js/scriptLoginForm.js"></script>
     <script src="js/scriptRegForm.js"></script>
     <script src="js/catalogFilter.js"></script>
+    <script src="js/goOut.js"></script>
   </body>
 </html>

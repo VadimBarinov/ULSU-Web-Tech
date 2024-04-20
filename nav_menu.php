@@ -24,7 +24,6 @@
             </h1>
           </div>
           <div class="modal-body">
-            <!-- временно указываю на другую страницу (action) -->
             <form id="loginForm" name="loginForm">
               <div class="mb-3 input-box">
                 <label for="loginFormEmail" class="col-form-label"
@@ -306,12 +305,10 @@
             </h1>
           </div>
           <div class="modal-footer my-modal-footer-clear">
-            <!-- временное решение для демонстрации -->
-            <!-- нужно будет сделать метод на js и убрать ссылку -->
             <button
               type="button"
               class="btn btn-outline-primary me-2"
-              onclick="window.location.href = 'index.php'"
+              onclick="goOutFunc()"
             >
               Да
             </button>
@@ -367,7 +364,7 @@
             </li>
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
-              <p class="my-nav-box-name">
+              <p class="my-nav-box-name login-name-temp">
                 <?=$_COOKIE['name']?> <img src="res/profile_icon.svg" width="50" />
               </p>
             </li>
@@ -384,7 +381,7 @@
             </li>
             <li class="my-btn-box-1-sm">
               <!-- кнопки регистрации и входа МАЛЕНЬКИЙ ЭКРАН -->
-              <p class="my-nav-box-name">
+              <p class="my-nav-box-name login-name-temp">
                 <?=$_COOKIE['name']?> <img src="res/profile_icon.svg" width="50" />
               </p>
             </li>
