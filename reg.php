@@ -28,6 +28,11 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])
 		$sqlInsert = "INSERT INTO users SET id_login = :regFormEmail, password = :regFormPassword, name = :regFormName";
 		$set = $PDO->PDO->prepare($sqlInsert);
 		$response['values'] = $set->execute($requestData);
+
+		setcookie('id_login', $requestData['regFormEmail']);
+		setcookie('password', $requestData['regFormPassword']);
+		setcookie('name', $requestData['regFormName']);
+		
 		$response['res'] = true;
 
 	} else {

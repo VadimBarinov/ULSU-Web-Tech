@@ -95,7 +95,9 @@ function buttonHandler(e) {
           inputHidenLabelEmail.textContent = "Такой Email уже существует";
           inputHidenLabelEmail.classList.add("open");
         } else {
-          $("[id=regModal]").modal("hide");
+          $("[id=regModal]").modal("hide"); // скрывается окно
+          $("[id=nav_menu_unlogin]").css("display", "none"); // скрывается панель навигации
+          $("[id=nav_menu_login_temp]").css("display", "block");
         }
       },
     });

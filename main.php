@@ -42,7 +42,11 @@
   <body>
     <?
       $page = 'main';
-      include 'nav_menu.php';
+      if($_COOKIE['id_login']){
+        include 'nav_menu_login.php';
+      } else {
+        include 'nav_menu.php';
+      }
     ?>
     <!-- карусель -->
     <div class="container my-carousel border my-border">

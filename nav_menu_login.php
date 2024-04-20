@@ -47,7 +47,7 @@
     </div>
 
     <!-- навигация -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id='nav_menu_login'>
       <div class="container">
         <a class="navbar-brand p-0" href="index.php">
           <img src="res/logo.svg" alt="Logo" width="60" />
@@ -86,7 +86,7 @@
             <li class="my-btn-box-1-lg">
               <!-- кнопки регистрации и входа БОЛЬШОЙ ЭКРАН -->
               <p class="my-nav-box-name">
-                Вадим <img src="res/profile_icon.svg" width="50" />
+                <?=$_COOKIE['name']?> <img src="res/profile_icon.svg" width="50" />
               </p>
             </li>
             <li class="my-btn-box-2-lg">
@@ -103,7 +103,7 @@
             <li class="my-btn-box-1-sm">
               <!-- кнопки регистрации и входа МАЛЕНЬКИЙ ЭКРАН -->
               <p class="my-nav-box-name">
-                Вадим <img src="res/profile_icon.svg" width="50" />
+                <?=$_COOKIE['name']?> <img src="res/profile_icon.svg" width="50" />
               </p>
             </li>
             <li class="my-btn-box-2-sm">
