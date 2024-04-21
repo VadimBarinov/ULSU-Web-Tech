@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог</title>
+    <title>Избранное</title>
     <script
 			  src="https://code.jquery.com/jquery-3.7.1.min.js"
 			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -42,13 +42,61 @@
   </head>
   <body>
     <?
-      $page = 'catalog';
+      $page = 'favorite';
       if($_COOKIE['id_login']){
         include 'nav_menu_login.php';
       } else {
         include 'nav_menu.php';
       }
     ?>
+    <!-- форма стереть избранное -->
+    <div
+      class="modal fade"
+      id="clearModal"
+      tabindex="-1"
+      aria-labelledby="clearModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <div class="my-modal-close-btn">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div>
+            <h1 class="modal-title fs-5 my-modal-title" id="clearModalLabel">
+              Очистить избранное?
+            </h1>
+          </div>
+          <div class="modal-footer my-modal-footer-clear">
+            <!-- временное решение для демонстрации -->
+            <!-- нужно будет сделать метод на js и убрать ссылку -->
+            <button
+              type="button"
+              class="btn btn-outline-primary me-2"
+              onclick="window.location.href = 'favorites.php'"
+            >
+              Стереть
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Отмена
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- фильтр -->
     <div class="container">
       <div class="my-catalog-filter">
@@ -60,7 +108,6 @@
               type="text"
               id="searchFormValue"
               name="searchFormValue"
-              required
             />
             <img src="res/search.svg" class="my-search-icon" />
           </div>
@@ -73,30 +120,30 @@
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 my-card-container"
       >
-        <?foreach ($productsCatalog as $productCatalog):?>
+        <?foreach ($productsFavorites as $productFavorites):?>
           <div class="col my-card-col">
             <div
               class="card border"
-              onclick="window.location.href = 'element.php?paramId=<?=$productCatalog['id']?>'"
+              onclick="window.location.href = 'element.php?paramId=<?=$productFavorites['id']?>'"
             >
-              <img src="<?=$productCatalog['image']?>" class="card-img-top" />
+              <img src="<?=$productFavorites['image']?>" class="card-img-top" />
               <div class="card-body">
-                <h5 class="card-title"><?=$productCatalog['name']?></h5>
+                <h5 class="card-title"><?=$productFavorites['name']?></h5>
                 <p class="card-text">
-                <?=$productCatalog['description']?>
+                <?=$productFavorites['description']?>
                 </p>
                 <div class="d-flex align-items-center">
                 <div class="btn-favorites">
-                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$productCatalog['id']?>)"s type="button">
-                      <img src="<? echo (in_array($productCatalog['id'],$massWithFavorites)) ? "res/grad_heart.svg" : "res/black_heart.svg"; ?>" 
-                        id="clickOnHeart<?=$productCatalog['id']?>"/>
+                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$productFavorites['id']?>)"s type="button">
+                      <img src="<? echo (in_array($productFavorites['id'],$massWithFavorites)) ? "res/grad_heart.svg" : "res/black_heart.svg"; ?>" 
+                        id="clickOnHeart<?=$productFavorites['id']?>"/>
                     </button>
                   </div>
                   <div class="my-card-btn btn-favorites">
-                    <button class="btn <? echo (in_array($productCatalog['id'],$massWithFavorites)) ? "btn-outline-primary" : "btn-primary"; ?>" 
-                    id="clickOnBtnFavorite<?=$productCatalog['id']?>" 
-                    onclick="clickOnHeart(<?=$productCatalog['id']?>)" type="button">
-                      <? echo (in_array($productCatalog['id'],$massWithFavorites)) ? "В избранном" : "В избранное"; ?>
+                    <button class="btn <? echo (in_array($productFavorites['id'],$massWithFavorites)) ? "btn-outline-primary" : "btn-primary"; ?>" 
+                    id="clickOnBtnFavorite<?=$productFavorites['id']?>" 
+                    onclick="clickOnHeart(<?=$productFavorites['id']?>)" type="button">
+                      <? echo (in_array($productFavorites['id'],$massWithFavorites)) ? "В избранном" : "В избранное"; ?>
                     </button>
                   </div>
                 </div>
@@ -105,6 +152,18 @@
           </div>
         <?endforeach?>
       </div>
+    </div>
+
+    <!-- стереть избранное -->
+    <div class="text-center">
+      <button
+        class="btn btn-clear-text"
+        data-bs-toggle="modal"
+        data-bs-target="#clearModal"
+        type="button"
+      >
+        Очистить избранное
+      </button>
     </div>
     <?
       include 'footer_menu.php';

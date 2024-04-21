@@ -657,3 +657,14 @@ body {
 .hide-card {
   display: none;
 }
+
+.btn-heart:hover {
+  background: white !important;
+  color: white !important;
+  box-shadow: none;
+}
+.btn-heart:active {
+  background: white !important;
+  color: white !important;
+  box-shadow: none !important;
+}

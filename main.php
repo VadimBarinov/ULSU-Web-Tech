@@ -344,12 +344,17 @@
                 <?=$product['description']?>
                 </p>
                 <div class="d-flex align-items-center">
-                  <a href="#" class="btn-favorites"
-                    ><img src="res/black_heart.svg" alt=""
-                  /></a>
+                  <div class="btn-favorites">
+                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$product['id']?>)"s type="button">
+                      <img src="<? echo (in_array($product['id'],$massWithFavorites)) ? "res/grad_heart.svg" : "res/black_heart.svg"; ?>" 
+                        id="clickOnHeart<?=$product['id']?>"/>
+                    </button>
+                  </div>
                   <div class="my-card-btn btn-favorites">
-                    <button class="btn btn-primary" type="button">
-                      В избранное
+                    <button class="btn <? echo (in_array($product['id'],$massWithFavorites)) ? "btn-outline-primary" : "btn-primary"; ?>" 
+                    id="clickOnBtnFavorite<?=$product['id']?>" 
+                    onclick="clickOnHeart(<?=$product['id']?>)" type="button">
+                      <? echo (in_array($product['id'],$massWithFavorites)) ? "В избранном" : "В избранное"; ?>
                     </button>
                   </div>
                 </div>
