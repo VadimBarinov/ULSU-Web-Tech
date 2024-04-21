@@ -47,6 +47,10 @@ function inputCheck(el) {
 
 function buttonHandler(e) {
   var isAllValid = 1;
+  const inputHidenLabelEmailLogin = document.querySelector(
+    "." + validLoginFormArr[0].getAttribute("name") + "Error"
+  );
+  inputHidenLabelEmailLogin.textContent = "В формате: name@mail.com";
   validLoginFormArr.forEach((el) => {
     const inputHidenLabel = document.querySelector(
       "." + el.getAttribute("name") + "Error"
@@ -64,7 +68,36 @@ function buttonHandler(e) {
   if (!Boolean(Number(isAllValid))) {
     e.preventDefault();
   } else {
-    //loginForm.submit();
-    //нужно сделать обработку данных
+    var url = "/login.php";
+    var data = {
+      loginFormEmail: $("[name=loginFormEmail]").val(),
+      loginFormPassword: $("[name=loginFormPassword]").val(),
+    };
+
+    $.ajax({
+      url: url,
+      type: "POST",
+      data: data,
+      dataType: "json",
+      success: (response) => {
+        if (response["res"] == false) {
+          validLoginFormArr[0].style.border = "2px solid rgb(255, 0, 0)";
+          validLoginFormArr[1].style.border = "2px solid rgb(255, 0, 0)";
+          inputHidenLabelEmailLogin.textContent = "Неверный логин или пароль";
+          inputHidenLabelEmailLogin.classList.add("open");
+        } else {
+          $(".login-name-temp").html(
+            response["values"]["name"] +
+              ' <img src="res/profile_icon.svg" width="50" />'
+          );
+
+          $("[id=loginModal]").modal("hide"); // скрывается окно
+          $("[id=nav_menu_unlogin]").css("display", "none"); // скрывается панель навигации
+          $("[id=nav_menu_unlogin_temp]").css("display", "none");
+          $("[id=nav_menu_login]").css("display", "block"); // скрывается панель навигации
+          $("[id=nav_menu_login_temp]").css("display", "block");
+        }
+      },
+    });
   }
 }
