@@ -60,7 +60,6 @@
               type="text"
               id="searchFormValue"
               name="searchFormValue"
-              required
             />
             <img src="res/search.svg" class="my-search-icon" />
           </div>

@@ -1,4 +1,4 @@
-const searchForm = document.forms["searchForm"]; // считываем форму
+const searchForm = document.getElementById("searchFormValue"); // считываем форму
 
 const allCards = document.querySelectorAll(".my-card-col");
 
@@ -9,13 +9,12 @@ addEventListener("keydown", (e) => {
   if (e.key === "Enter") e.preventDefault();
 });
 
-function inputHandler({ target }) {
-  inputCheck(target);
+function inputHandler() {
+  inputCheck();
 }
 
-function inputCheck(el) {
-  const inputValue = el.value;
-  console.log(inputValue);
+function inputCheck() {
+  const inputValue = searchForm.value;
 
   allCards.forEach((card) => {
     const thisCardTitle = card.querySelector(".card-title").textContent;
