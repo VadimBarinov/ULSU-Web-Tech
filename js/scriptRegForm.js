@@ -105,6 +105,10 @@ function buttonHandler(e) {
           $("[id=nav_menu_unlogin_temp]").css("display", "none");
           $("[id=nav_menu_login]").css("display", "block"); // скрывается панель навигации
           $("[id=nav_menu_login_temp]").css("display", "block");
+
+          if (document.title == "Избранное") {
+            location.reload();
+          }
         }
       },
     });

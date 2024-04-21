@@ -10,10 +10,6 @@ addEventListener("keydown", (e) => {
 });
 
 function inputHandler() {
-  inputCheck();
-}
-
-function inputCheck() {
   const inputValue = searchForm.value;
 
   allCards.forEach((card) => {
