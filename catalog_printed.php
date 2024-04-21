@@ -85,8 +85,8 @@
                 <?=$productCatalog['description']?>
                 </p>
                 <div class="d-flex align-items-center">
-                <div class="btn-favorites">
-                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$productCatalog['id']?>)"s type="button">
+                  <div class="btn-favorites">
+                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$productCatalog['id']?>)" type="button">
                       <img src="<? echo (in_array($productCatalog['id'],$massWithFavorites)) ? "res/grad_heart.svg" : "res/black_heart.svg"; ?>" 
                         id="clickOnHeart<?=$productCatalog['id']?>"/>
                     </button>

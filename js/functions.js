@@ -27,6 +27,12 @@ function clickOnHeart(product_login) {
           btn.innerText = "В избранном";
 
           heart.src = "res/grad_heart.svg";
+
+          if (btn.classList.contains("my-element-btn-primary")) {
+            btn.classList.remove("my-element-btn-primary");
+            btn.classList.add("my-element-btn-outline-primary");
+            heart.src = "res/grad_heart_large.svg";
+          }
         }
       },
     });
@@ -48,6 +54,12 @@ function clickOnHeart(product_login) {
           btn.innerText = "В избранное";
 
           heart.src = "res/black_heart.svg";
+
+          if (btn.classList.contains("my-element-btn-outline-primary")) {
+            btn.classList.remove("my-element-btn-outline-primary");
+            btn.classList.add("my-element-btn-primary");
+            heart.src = "res/black_heart_large.svg";
+          }
         }
       },
     });

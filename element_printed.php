@@ -59,14 +59,17 @@
         <div class="d-flex align-items-center">
           <div class="my-element-btn-container d-flex align-items-center">
             <div>
-              <button
-                class="btn btn-primary my-element-btn-primary"
-                type="button"
-              >
-                В избранное
+              <button class="btn <? echo (in_array($elementInfo['id'],$massWithFavorites)) ? "btn-outline-primary my-element-btn-outline-primary" :
+               "btn-primary my-element-btn-primary"; ?>" 
+              id="clickOnBtnFavorite<?=$elementInfo['id']?>" 
+              onclick="clickOnHeart(<?=$elementInfo['id']?>)" type="button">
+                <? echo (in_array($elementInfo['id'],$massWithFavorites)) ? "В избранном" : "В избранное"; ?>
               </button>
             </div>
-            <a href="#"><img src="res/black_heart_large.svg" alt="" /></a>
+            <button class="btn btn-heart" onclick="clickOnHeart(<?=$elementInfo['id']?>)" type="button">
+              <img src="<? echo (in_array($elementInfo['id'],$massWithFavorites)) ? "res/grad_heart_large.svg" : "res/black_heart_large.svg"; ?>" 
+              id="clickOnHeart<?=$elementInfo['id']?>"/>
+            </button>
           </div>
         </div>
         <img

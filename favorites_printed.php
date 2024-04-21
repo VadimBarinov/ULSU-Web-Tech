@@ -132,7 +132,7 @@
                 </p>
                 <div class="d-flex align-items-center">
                 <div class="btn-favorites">
-                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$productFavorites['id']?>)"s type="button">
+                    <button class="btn btn-heart" onclick="clickOnHeart(<?=$productFavorites['id']?>)" type="button">
                       <img src="<? echo (in_array($productFavorites['id'],$massWithFavorites)) ? "res/grad_heart.svg" : "res/black_heart.svg"; ?>" 
                         id="clickOnHeart<?=$productFavorites['id']?>"/>
                     </button>
