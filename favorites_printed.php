@@ -75,12 +75,10 @@
             </h1>
           </div>
           <div class="modal-footer my-modal-footer-clear">
-            <!-- временное решение для демонстрации -->
-            <!-- нужно будет сделать метод на js и убрать ссылку -->
             <button
               type="button"
               class="btn btn-outline-primary me-2"
-              onclick="window.location.href = 'favorites.php'"
+              onclick="delAllFavorites()"
             >
               Стереть
             </button>
@@ -155,7 +153,8 @@
     </div>
 
     <!-- стереть избранное -->
-    <div class="text-center">
+    <?if($_COOKIE['id_login']):?>
+      <div class="text-center">
       <button
         class="btn btn-clear-text"
         data-bs-toggle="modal"
@@ -165,6 +164,17 @@
         Очистить избранное
       </button>
     </div>
+    <?endif?>
+    <?if(!$_COOKIE['id_login']):?>
+      <div class="text-center">
+      <button
+        class="btn btn-clear-text"
+        type="button"
+        disabled
+      >
+        Войдите чтобы<br />увидеть избранное
+      </button>
+    <?endif?>
     <?
       include 'footer_menu.php';
     ?>
@@ -173,5 +183,6 @@
     <script src="js/scriptRegForm.js"></script>
     <script src="js/catalogFilter.js"></script>
     <script src="js/goOut.js"></script>
+    <script src="js/delAllFavorites.js"></script>
   </body>
 </html>
