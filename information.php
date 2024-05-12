@@ -42,6 +42,9 @@
   </head>
   <body>
     <?
+      ini_set('display_errors', 0);
+      ini_set('display_startup_errors', 0);
+      error_reporting(0);
       $page = 'info';
       if($_COOKIE['id_login']){
         include 'nav_menu_login.php';
