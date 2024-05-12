@@ -35,6 +35,6 @@ class PdoConnect {
         return self::$_instance;
     }
 
-    private function __clone() {}
-    private function __wakeup() {}
+    public function __clone() {}
+    public function __wakeup() {}
 }
