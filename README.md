@@ -6,16 +6,16 @@
 - Есть возможность регистрации и входа.
 - Есть возможность добавления велосипеда в избранное. 
 
-![alt text](screenshots/Главная.png) 
+![](screenshots/Главная.png) 
 
-![alt text](screenshots/Вход.png) 
+![](screenshots/Вход.png) 
 
-![alt text](screenshots/Регистрация.png) 
+![](screenshots/Регистрация.png) 
 
-![alt text](screenshots/Каталог.png) 
+![](screenshots/Каталог.png) 
 
-![alt text](screenshots/JamisDURANGOA2.png) 
+![](screenshots/JamisDURANGOA2.png) 
 
-![alt text](screenshots/Избранное.png) 
+![](screenshots/Избранное.png) 
 
-![alt text](screenshots/Оcебе.png)
+![](screenshots/Оcебе.png)
